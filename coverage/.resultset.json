@@ -11,6 +11,11 @@
         null,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
         null
       ],
       "/Users/saicam/Documents/projects/bookmark-manager/spec/features/show_bookmarks_spec.rb": [
@@ -19,9 +24,35 @@
         1,
         1,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/saicam/Documents/projects/bookmark-manager/spec/unit/bookmark_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/saicam/Documents/projects/bookmark-manager/lib/bookmark.rb": [
+        1,
+        1,
+        2,
+        null,
         null
       ]
     },
-    "timestamp": 1554730551
+    "timestamp": 1554732457
   }
 }
