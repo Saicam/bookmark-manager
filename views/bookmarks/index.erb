@@ -7,14 +7,13 @@
   </head>
   <body>
     <h1>List of bookmarks:</h1> <br>
-    <ul>
-      <% @bookmarks.each do |bookmark| %>
-  <li><a href=<%= bookmark.url %>><%= bookmark.title %></a>
-    <form action="/bookmarks/remove" method="post">
-<button class="id-<%= bookmark.id %>" name="id" value=<%= bookmark.id %> type="submit">Remove</button>
-</form>
-  </li>
-      <% end %>
+    <ul><% @bookmarks.each do |bookmark| %>
+      <li><a href=<%= bookmark.url %>><%= bookmark.title %></a>
+        <form action="/bookmarks/<%= bookmark.id %>" method="post">
+          <input type='hidden' name='_method' value='DELETE'/>
+          <input class="id-<%= bookmark.id %>" type="submit" value="Delete" />
+        </form>
+      </li><% end %>
     </ul>
   </body>
 </html>

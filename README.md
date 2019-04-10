@@ -87,3 +87,8 @@ To create the needed table we run the `test.sql` scripts from /db/migrations in 
 
     <input type="submit" value="Add"> <br>
 </form>
+
+<form action="/bookmarks/<%= bookmark.id %>" method="delete">
+  <input type='hidden' name='_method' value='DELETE'/>
+<button class="id-<%= bookmark.id %>" name="id" value=<%= bookmark.id %> type="submit">Remove</button>
+</form>
