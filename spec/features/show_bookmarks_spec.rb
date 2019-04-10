@@ -9,6 +9,8 @@ feature "Show Bookmarks" do
   scenario "It shows the bookmarks list" do
     visit("/bookmarks")
     expect(page).to have_content "List of bookmarks:"
-    expect(page).to have_content  "http://www.google.com"
+    expect(page).to have_link("Google", href: "http://www.google.com")
+    expect(page).to have_link("Makers Academy", href: "http://www.makersacademy.com")
+
   end
 end

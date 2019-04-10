@@ -9,7 +9,11 @@
     <h1>List of bookmarks:</h1> <br>
     <ul>
       <% @bookmarks.each do |bookmark| %>
-        <li><%= bookmark %></li>
+  <li><a href=<%= bookmark.url %>><%= bookmark.title %></a>
+    <form action="/bookmarks/remove" method="post">
+<button class="id-<%= bookmark.id %>" name="id" value=<%= bookmark.id %> type="submit">Remove</button>
+</form>
+  </li>
       <% end %>
     </ul>
   </body>
